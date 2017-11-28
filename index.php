@@ -5,10 +5,27 @@
     <title></title>
   </head>
   <body>
+    <?php
+      function Form()
+      {
+        if (!empty($_POST['name']) && !empty($_POST['email'])) {
+          # code...
+          echo "Proccess form";
+        }else {
+          echo "please enter something";
+        }
+      }
+
+      if(isset($_POST['submit'])){
+        form();
+      }else{
+        echo '';
+      }
+     ?>
     <form action="index.php" method="post">
       <input type="text" name="name" placeholder="First name">
       <input type="text" name="email" placeholder="email@email.com">
-      <input type="submit" name="submit" value="submit">
+      <input type="submit" name="submit">
     </form>
   </body>
 </html>
