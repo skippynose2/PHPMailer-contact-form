@@ -11,10 +11,9 @@
         if (!empty($_POST['name']) && !empty($_POST['email'])) {
           # code...
           //createing vars for getting info
-          $name = htmlentities($_POST['name']);
-          $email = htmlentities($_POST['email']);
-          echo $name;
-          echo $email;
+          $name = htmlentities($_POST['name']); // do not mess with
+          $email = htmlentities($_POST['email']); // do not mess with 
+          if
         }else {
           echo "please enter something";
         }
