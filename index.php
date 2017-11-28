@@ -10,7 +10,11 @@
       {
         if (!empty($_POST['name']) && !empty($_POST['email'])) {
           # code...
-          echo "Proccess form";
+          //createing vars for getting info
+          $name = htmlentities($_POST['name']);
+          $email = htmlentities($_POST['email']);
+          echo $name;
+          echo $email;
         }else {
           echo "please enter something";
         }
